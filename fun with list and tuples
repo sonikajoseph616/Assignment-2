@@ -1,0 +1,11 @@
+def Sort_Tuple(tuple): 
+    a = len(tuple) 
+    for i in range(0, a): 
+        for j in range(0, a-i-1): 
+            if (tuple[j][-1] > tuple[j + 1][-1]): 
+                temp = tuple[j] 
+                tuple[j]= tuple[j + 1] 
+                tuple[j + 1]= temp 
+    return tuple  
+tup =[(2, 5), (1, 2), (4, 4), (2, 3), (2, 1)]         
+print(Sort_Tuple(tup))
