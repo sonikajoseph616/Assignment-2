@@ -1,0 +1,4 @@
+a = {}
+for i in range(97, 97 + 26):
+    a[chr(i)] = i
+print(a)
